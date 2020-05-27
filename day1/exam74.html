@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function more(form) {
+		n1 = parseInt(form.num1.value);
+		n2 = parseInt(form.num2.value);
+		
+		result = "";
+		if(n1 > n2){
+			result = "더 큰수는 " + n1 + "입니다"
+		}else if(n1 < n2){
+			result = "더 큰수는 " + n2 + "입니다"
+		}else{
+			result = "두 수는 같습니다."
+		}
+		
+		alert(result);
+	}
+</script>
+</head>
+<body>
+	<H3>더 큰수 구하기</H3>
+	<hr>
+	<FORM NAME="frmScore">
+		첫번째 수 입력 <INPUT TYPE="text" name="num1"><br>
+		두번째 수 입력 <INPUT TYPE="text" name="num2"><br>
+		<P>
+		<input type="button" onclick="more(this.form);" value="더 큰수 구하기">
+		</p>
+	</FORM>
+</body>
+</html>

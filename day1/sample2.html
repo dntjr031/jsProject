@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+		
+	function send() {
+		dong = window.document.frm1.dong.value;	
+		opener.document.frmtest.address1.value=dong;
+		
+		self.close(); 
+	}
+</script>
+</head>
+<body>
+	<form name="frm1">
+		동 입력 : <input type="text" name="dong"> <input type="button"
+			value="확인" onclick="send()">
+	</form>
+</body>
+</html>

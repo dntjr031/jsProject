@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function send(){
+		/* [1] id 로 html객체에 접근 */
+		var userid = window.document.frm.userid.value;
+		/* [2] name 으로 html객체에 접근 */
+		var tel = document.getElementById("tel").value;
+		
+		alert("userid=" + userid + ", tel=" + tel);
+	}
+
+	
+</script>
+</head>
+<body>
+	<H3>회원가입</H3>
+	<FORM NAME="frm">
+		아이디 <INPUT TYPE="text" name="userid"><br> 
+		전화번호 <INPUT TYPE="text" name="tel" id="tel"><br> 
+		<INPUT TYPE="button" value="확인" onClick="send()">
+	</FORM>
+</body>
+</html>

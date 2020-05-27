@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function change() {
+		dolor = window.document.cng.dolor.value;
+		won = Number(dolor) * 1236.0;
+		window.document.cng.won.value = won;
+	}
+</script>
+</head>
+<body>
+	<h1>환율 계산</h1>
+	<br>
+	<hr>
+	<form name="cng">
+		미국 달러입력 <input type="text" name="dolor" size="20"> <br> 
+		<input type="button" value="확인" onclick="change()"> 
+		한국원화 <input type="text" name="won" size="20">
+	</form>
+</body>
+</html>

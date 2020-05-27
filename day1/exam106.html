@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function winOpen1() {
+		open("","ev","width=400,height=300,left=10,right=10,top=40,location=yes"
+				,"resizable=yes");
+	}
+	
+	function winOpen2() {
+		mywin = open("notice.html","win","width=300,height=200,left=0,top=0,location=yes"
+				,"resizable=yes");
+	}
+</script>
+</head>
+<body onload="winOpen2()">
+	<a href="http://www.naver.com" onclick="winOpen()" target="ev">새창에 네이버 띄우기</a>
+</body>
+</html>
