@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function load() {
+		clock();
+		setInterval("location.reload()",60000);
+	}
+	
+	function clock() {
+		var today = new Date();
+		var str = "현재 시간은 " + today.getHours() + "시 " + today.getMinutes() + "분 " +
+		today.getSeconds() + "초입니다."
+		window.document.getElementById("h1").innerHTML = str;
+	}
+</script>
+</head>
+<body onload="load()">
+	<h1 id="h1"></h1>
+</body>
+</html>

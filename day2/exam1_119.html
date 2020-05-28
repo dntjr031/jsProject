@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	mywin = open("",'win',
+			'width=300,height=300,left=0,top=20,location-yes,resizable=yes',);
+	
+	mywin.document.body.innerHTML = "notice.html<br><br><p>이것은 작은 창입니다. 여기에 <strong>광고</strong>나 <strong>공지사항</strong>등을 사용하는 경우가 많습니다.</p>"
+	mywin.document.body.style.textAlign = "center";
+	mywin.document.body.style.backgroundColor = "black";
+	mywin.document.body.style.color = "white";
+	
+	setTimeout("mywin.close()",5000);
+	//지정한 시간 후에 해당 함수를 실행
+	//1번만 실행함
+</script>
+</head>
+<body>
+	<h1>5초 후에 작은 창이 자동으로 닫힙니다.</h1>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function pageMove() {
+		location.href = "http://www.naver.com";
+	}
+	
+	function clock() {
+		var today = new Date();
+		var str = "현재 시간은 " + today.getHours() + "시 " + today.getMinutes() + "분 " +
+		today.getSeconds() + "초입니다."
+		window.document.getElementById("h1").innerHTML = str;
+	}
+</script>
+</head>
+<body onload="clock()">
+	<input type="button" value="뒤로" onclick="history.back()">
+	<input type="button" value="앞으로" onclick="history.forward()">
+	<input type="button" value="새로고침" onclick="location.reload()">
+	<input type="button" value="네이버로 이동" onclick="pageMove()">
+	<hr>
+	<h1 id="h1"></h1>
+</body>
+</html>
