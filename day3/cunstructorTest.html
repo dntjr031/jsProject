@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	//생성자
+	function Student(name, kor,math,eng) {
+		//속성
+		this.name = name;
+		this.kor = kor;
+		this.math = math;
+		this.eng = eng;
+		
+		this.getSum = function() {
+			return this.kor + this.math + this.eng;
+		}
+		
+		this.getAverage = function() {
+			return this.getSum() / 3.0;
+		}
+		
+		this.toString = function() {
+			return this.name + " : " + this.getSum() + ", " + this.getAverage();
+		}
+	}
+	
+	//객체 생성
+	var st = new Student('홍길동',100,99,97);
+	var str = st.toString();
+	alert(str);
+	
+	//배열에 여러 객체 저장
+	var students = [];
+	students.push(new Student('김길동',95,85,75));
+	students.push(new Student('이길동',99,89,79));
+	students.push(new Student('정길동',91,82,73));
+	
+	var output = "";
+	for (var i = 0; i < students.length; i++) {
+		output += students[i].toString() + "\n";
+	}
+	
+	alert(output);
+</script>
+</body>
+</html>

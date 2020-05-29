@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 생성자 함수를 선언 
+		function Student(name, kor, math, eng) {
+			this.name = name;
+			this.kor = kor;
+			this.math = math;
+			this.eng = eng;
+		}
+
+		//인스턴스를 생성
+		var student = new Student('홍길동', 96, 98, 92);
+		//출력 
+		alert(student instanceof Student); //true 
+		alert(student instanceof Number); //false 
+		alert(student instanceof String); //false 
+		alert(student instanceof Boolean); //false
+	</script>
+</body>
+</html>
